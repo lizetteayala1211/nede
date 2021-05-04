@@ -1,0 +1,1219 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>	
+<title> NEDE </title>
+<link href="style.css" rel="stylesheet" type="text/css">
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+ <script src="https://cdn.jsdelivr.net/npm/p5@0.5.11/lib/p5.min.js" type="text/javascript"></script>
+
+<iframe src="https://openprocessing.org/sketch/1184369/embed/" width="310%" height="130%" id="background"></iframe>
+
+</head>	
+
+<body id="main-body">
+	
+<!-- <canvas></canvas> -->
+
+<section id="home-container">
+	<div id="logo-container">
+		<div id="logo"></div>
+	</div>
+
+<script>
+	
+$(document).ready(function(){
+  $("#about-link").click(function(){
+  	$('#about-container').css('display', 'flex');
+    $("#home-container").hide();
+    $("#about-container").slideDown(1000);
+  });
+}); 
+
+$(document).ready(function(){
+  $("#community-link").click(function(){
+    $("#community-sub-menu").slideToggle( "slow" );
+  });
+}); 
+
+$(document).ready(function(){
+  $("#small-logo-container").click(function(){
+    $("#navigation-menu-container").slideToggle( "slow" );
+  });
+}); 		
+
+</script>	
+
+	<div id="about-content-container">
+		<div id="about-hr-container"> <hr id="about-hr"> </div>
+		<a id="about-link"> ABOUT </a>
+	</div>
+
+	<div id="community-content-container">
+		<a id="community-link"> COMMUNITY </a>
+			<div id="community-hr-container"> <hr id="community-hr"> </div>
+		<div id="community-sub-menu">
+			<div id="community-sub-hr-container"> <hr id="community-sub-hr"> </div>
+			<div id="community-sub-menu-list-container">
+				<div id="community-list-member">
+					<div id="community-list-member-hr-container"> <hr id="community-list-member-hr"></div>
+					<div id="community-member-name" class="first"> ICE CREAM SOCIAL </div>
+				</div>
+				<div id="community-list-member">
+					<div id="community-list-member-hr-container"> <hr id="community-list-member-hr"></div>
+					<div id="community-member-name" class="second"> BEDSPREAD RADIO </div>
+				</div>
+				<div id="community-list-member">
+					<div id="community-list-member-hr-container"> <hr id="community-list-member-hr"></div>
+					<div id="community-member-name" class="third"> SOFTWEB </div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="stage-content-container">
+		<a id="stage-link"> STAGE </a>
+		<a id="stage-link-small"> (COMING SOON) </a>
+		<div id="stage-hr-one-container"> <hr id="stage-one-hr"> </div>
+		<div id="stage-hr-container"> <hr id="stage-hr"> </div>
+	</div>
+
+		<div id="artists-content-container">
+		<div id="artists-hr-container"> <hr id="artists-hr"> </div>
+		<div id="artists-hr-two-container"> <hr id="artists-two-hr"> </div>
+		<div id="artists-hr-three-container"> <hr id="artists-three-hr"> </div>
+		<a id="artists-link"> ARTISTS </a>
+	</div>
+
+	<div id="store-content-container">
+		<div id="store-hr-one-container"> <hr id="store-one-hr"> </div>
+		<div id="store-hr-container"> <hr id="store-hr"> </div>
+		<a id="store-link"> STORE </a>	
+		<a id="store-link-small"> (COMING SOON) </a>	
+	</div>
+
+</section>
+
+<section id="about-container">
+	<div id="one-third">
+		<div id="small-logo-container">
+			<div id="small-logo"></div>
+		</div>
+		<div id="navigation-menu-container">
+			<div id="navigation-menu-hr-container"> <hr id="navigation-menu-hr"> </div>
+			<div id="navigation-menu-list">
+				<div id="navigation-section">
+					<div id="navigation-section-hr-container"> <hr id="navigation-section-hr"> </div>
+					<div id="navigation-section-name"> ABOUT </div>
+				</div>
+				<div id="navigation-section">
+					<div id="navigation-section-hr-container"> <hr id="navigation-section-hr"> </div>
+					<div id="navigation-section-name"> ARTISTS </div>
+<!-- 		<div id="artists-sub-menu-2">
+			<div id="artists-sub-hr-container-2"> <hr id="artists-sub-hr-2"> </div>
+			<div id="artists-sub-menu-list-container-2">
+				<div id="artists-list-member-2">
+					<div id="artists-list-member-hr-container-2"> <hr id="artists-list-member-hr-2"></div>
+					<div id="artists-member-name-2"> HOUSE OF KENZO </div>
+				</div>
+				<div id="artists-list-member-2">
+					<div id="artists-list-member-hr-container-2"> <hr id="artists-list-member-hr-2"></div>
+					<div id="artists-member-name-2"> MYSHA </div>
+				</div>
+				<div id="artists-list-member-2">
+					<div id="artists-list-member-hr-container-2"> <hr id="artists-list-member-hr-2"></div>
+					<div id="artists-member-name-2"> RABIT </div>
+				</div>
+				<div id="artists-list-member-2">
+					<div id="artists-list-member-hr-container-2"> <hr id="artists-list-member-hr-2"></div>
+					<div id="artists-member-name-2"> PINK SIIFU </div>
+				</div>				
+			</div>
+		</div>						 -->
+				</div>
+				<div id="navigation-section">
+					<div id="navigation-section-hr-container"> <hr id="navigation-section-hr"> </div>
+					<div id="navigation-section-name"> COMMUNITY </div>
+		<div id="community-sub-menu-2">
+			<div id="community-sub-hr-container-2"> <hr id="community-sub-hr-2"> </div>
+			<div id="community-sub-menu-list-container-2">
+				<div id="community-list-member-2">
+					<div id="community-list-member-hr-container-2"> <hr id="community-list-member-hr-2"></div>
+					<div id="community-member-name-2"> ICE CREAM SOCIAL </div>
+				</div>
+				<div id="community-list-member-2">
+					<div id="community-list-member-hr-container-2"> <hr id="community-list-member-hr-2"></div>
+					<div id="community-member-name-2"> BEDSPREAD RADIO </div>
+				</div>
+				<div id="community-list-member-2">
+					<div id="community-list-member-hr-container-2"> <hr id="community-list-member-hr-2"></div>
+					<div id="community-member-name-2"> SOFTWEB </div>
+				</div>
+			</div>
+		</div>					
+				</div>
+				<div id="navigation-section">
+					<div id="navigation-section-hr-container"> <hr id="navigation-section-hr"> </div>
+					<div id="navigation-section-name"> STAGE (Coming Soon) </div>
+				</div>
+				<div id="navigation-section">
+					<div id="navigation-section-hr-container"> <hr id="navigation-section-hr"> </div>
+					<div id="navigation-section-name"> STORE (Coming Soon) </div>
+				</div>				
+			</div>	
+		</div>
+	</div>
+	<div id="two-third"></div>
+	<div id="three-third">
+		<div id="page-title"> NEDE <br> STATEMENT OF TRANSPARENCY </div>
+		<p id="page-copy"> 
+			<span id="bold">First and foremost, NEDE is an artist-run platform for Richmond creatives. We seek to uplift the voices of BIPOC and Queer creators, unequivocally, providing a space free from traditional gatekeeping.
+			</span>
+			<br><br>
+			If it is hard to be an artist everywhere, it often feels especially hard in the US. Institutional funding is limited, and the few opportunities that are available become a dog-eat-dog competition. Fewer still are the opportunities available to Queer and BIPOC creatives, and available outside of major US metropolitan areas. Richmond, especially, has suffered over the last few years from venue closures and lack of accessible and welcoming spaces.
+			<br><br>
+			For many working artists, the lack of opportunity forces conforming to standards of preexisting institutions, in hopes of providing the necessary funding and resources. Others take up residency in European countries with more arts funding, with increased access to institutions that can pay creators a living wage.
+			<br><br>
+			After experiencing these arts communities abroad, the NEDE team began to ask ourselves the questions: Why not here? Why can’t we give these artists their roses while they’re still among us, and create platforms that they can work with as peers? How can we create less hoops for artists to jump through, for the elusive goal of institutional support?
+			<br><br>
+			<span id="bold">NEDE blossomed as an opportunity to showcase local working artists, in their own context, in their own words, in their own city. </span>
+			<br><br>
+			We began this project as a partnership with the ICA, to bring a large-scale, experimental music festival to Richmond. With the restrictions due to COVID-19 making this currently impossible, we were forced to rethink our plans. 
+			<br><br>
+			NEDE.ONLINE is our attempt to refocus our momentum, providing a platform to showcase the work creators and collectives are doing within Richmond, host digital experiences, and commission new works for this format. Our structure and approach is intentionally fluid, adapting to the rapidly changing metaverse of institutions and technology, and the needs of artists within the community.
+			<br><br>
+			<span id="italics">This site is the first of a series of commissioned pieces under the NEDE umbrella, a home for all that is yet to come. It was designed by Ashley Moody, and developed by Lizette Ayala. You can read more about their thoughtful work in our interview here. Over the next few weeks, we’ll be rolling out profiles and dialogues with local creative collectives operating within Richmond. If our mission resonates with you -- especially if you’re a working artist within Richmond -- please don’t hesitate to reach out via our socials.</span>
+			<br><br>
+			However, nothing happens in a bubble. In order to build a stronger international network, NEDE has reached out to additional artists to grow and collaborate with the Richmond artists. Our goal is to make Richmond an essential node for touring and experimental arts in the US, with our initiatives leading the way. <span id="bold">We also see our work as a call-to-action, for institutions in cities across the US, both to organize, give space to, and pay BIPOC and Queer artists fairly. </span>
+			<br><br>
+			While the creative community waits for COVID restrictions to subside, we hope to offer an optimistic showcase of what is to come: creative communities organizing independently, having equitable relationships with institutions, and being recognized for their work!
+			<br><br>
+			Development support provided by the <a href="http://icavcu.org" target="_blank">Institute for Contemporary Art at VCU</a> at Virginia Commonwealth University.
+
+		</p>
+	</div>
+</section>
+
+<script type="text/javascript">
+	
+$(document).ready(function(){
+  $("#community-member-name.first").click(function(){
+  	$('#community-container.ice-cream-social').css('display', 'flex');
+    $("#home-container").slideUp(1000);
+    $("#community-container.ice-cream-social").slideDown(1000);
+  });
+}); 
+
+$(document).ready(function(){
+  $("#small-logo-container.two").click(function(){
+  	$("#image-slider-container").slideToggle( "slow" );
+    $("#navigation-menu-container.two").slideToggle( "slow" );
+  });
+});
+
+</script>
+
+<section id="community-container" class="ice-cream-social">
+	<div id="one-third">
+		<div id="small-logo-container" class="two">
+			<div id="small-logo"></div>
+		</div>
+		<div id="image-slider-container">
+
+		</div>
+		<div id="navigation-menu-container" class="two">
+			<div id="navigation-menu-hr-container"> <hr id="navigation-menu-hr"> </div>
+			<div id="navigation-menu-list">
+				<div id="navigation-section">
+					<div id="navigation-section-hr-container"> <hr id="navigation-section-hr"> </div>
+					<div id="navigation-section-name"> ABOUT </div>
+				</div>
+				<div id="navigation-section">
+					<div id="navigation-section-hr-container"> <hr id="navigation-section-hr"> </div>
+					<div id="navigation-section-name"> ARTISTS </div>
+		<div id="artists-sub-menu-2">
+			<div id="artists-sub-hr-container-2"> <hr id="artists-sub-hr-2"> </div>
+<!-- 			<div id="artists-sub-menu-list-container-2">
+				<div id="artists-list-member-2">
+					<div id="artists-list-member-hr-container-2"> <hr id="artists-list-member-hr-2"></div>
+					<div id="artists-member-name-2"> HOUSE OF KENZO </div>
+				</div>
+				<div id="artists-list-member-2">
+					<div id="artists-list-member-hr-container-2"> <hr id="artists-list-member-hr-2"></div>
+					<div id="artists-member-name-2"> MYSHA </div>
+				</div>
+				<div id="artists-list-member-2">
+					<div id="artists-list-member-hr-container-2"> <hr id="artists-list-member-hr-2"></div>
+					<div id="artists-member-name-2"> RABIT </div>
+				</div>
+				<div id="artists-list-member-2">
+					<div id="artists-list-member-hr-container-2"> <hr id="artists-list-member-hr-2"></div>
+					<div id="artists-member-name-2"> PINK SIIFU </div>
+				</div>				
+			</div>
+ -->		</div>						
+				</div>
+				<div id="navigation-section">
+					<div id="navigation-section-hr-container"> <hr id="navigation-section-hr"> </div>
+					<div id="navigation-section-name"> COMMUNITY </div>
+		<div id="community-sub-menu-2">
+			<div id="community-sub-hr-container-2"> <hr id="community-sub-hr-2"> </div>
+			<div id="community-sub-menu-list-container-2">
+				<div id="community-list-member-2">
+					<div id="community-list-member-hr-container-2"> <hr id="community-list-member-hr-2"></div>
+					<div id="community-member-name-2"> ICE CREAM SOCIAL </div>
+				</div>
+				<div id="community-list-member-2">
+					<div id="community-list-member-hr-container-2"> <hr id="community-list-member-hr-2"></div>
+					<div id="community-member-name-2"> BEDSPREAD RADIO </div>
+				</div>
+				<div id="community-list-member-2">
+					<div id="community-list-member-hr-container-2"> <hr id="community-list-member-hr-2"></div>
+					<div id="community-member-name-2"> SOFTWEB </div>
+				</div>
+			</div>
+		</div>					
+				</div>
+				<div id="navigation-section">
+					<div id="navigation-section-hr-container"> <hr id="navigation-section-hr"> </div>
+					<div id="navigation-section-name"> STAGE (Coming Soon) </div>
+				</div>
+				<div id="navigation-section">
+					<div id="navigation-section-hr-container"> <hr id="navigation-section-hr"> </div>
+					<div id="navigation-section-name"> STORE (Coming Soon) </div>
+				</div>				
+			</div>	
+		</div>
+	</div>
+	<div id="two-third" class="ice-cream-social">
+		<div id="image-slider-container" class="ice-cream-social">
+			<div id="image-slider">
+				<div class="sliderimg">
+					<img src="./assets/images/Judy.jpeg">
+				</div>	
+				<div class="sliderimg">
+					<img src="./assets/images/Noir.jpeg">
+				</div>
+				<div class="sliderimg">
+					<img src="./assets/images/Angel.jpeg">
+				</div>
+				<div class="sliderimg">
+					<img src="./assets/images/Sofia.jpeg">
+				</div>
+				<div class="sliderimg">
+					<img src="./assets/images/Na_eem.JPG">
+				</div>
+				<div class="sliderimg">
+					<img src="./assets/images/Sanji.jpeg">
+				</div>												
+			</div>
+		</div>	
+	</div>
+	<div id="three-third">
+		<div id="page-title"> BIO </div>
+		<p id="page-copy"> 
+			Ice Cream Social RVA is dance party series, booking agency, and mutual aid artist collective centered around the joy of Queer, Trans, Black, Indigenous, People of Color. Ice Cream Social RVA acts as a springboard for the creative and curious while raising money for other mutual aid organizations and BIPOC in need. Founded to challenge anti-Blackness, transphobia, and transmisogyny in their local party scene, Ice Cream Social RVA features a hard-hitting roster of resident DJ’s and artists that bring a range of flavors to the dance floor.
+			<br><br>
+			Despite venue shutdowns, Ice Cream Social continues to serve through a weekly mix series called “Ice Cream Sundays”, apparel, radio play, virtual shows, and more.  		
+			<br><br>
+			#SupportIceCream
+		</p>
+		<div id="page-title"> MEMBERS </div>
+		<p id="page-copy"> 
+			Judy (They/Them) <br>
+			Noir my pronouns is my name Noir: @Genderdisappointment <br>
+			Angel (She/Her): @archangelzhalo <br>
+			Sofia (She/Her): @sofia.lakis <br>
+			Na’eem (They/She): @theehuntingdog <br>
+			Sanji (He/Him): @sanjithehedgehog <br> 
+			<br><br>
+		</p>
+
+		<div id="audio-player-container">
+			<audio>
+  <source src="assets/audio/ICE CREAM SUNDAY - VOL. 12_ HUNTING DOG.mp3"  type="audio/mp3">
+</audio> 
+
+
+<div style="width: 50px; height: 50px;"></div>
+<div class="audio-player">
+  <div class="timeline">
+    <div class="progress"></div>
+  </div>
+  <div class="controls">
+    <div class="play-container">
+      <div class="toggle-play play">
+    </div>
+    </div>
+    <div class="time">
+      <div class="current">0:00</div>
+      <div class="divider">/</div>
+      <div class="length"></div>
+    </div>
+<!--     <div class="name">Music Song</div> -->
+<!--     credit for icon to https://saeedalipoor.github.io/icono/ -->
+    <div class="volume-container">
+      <div class="volume-button">
+        <div class="volume icono-volumeMedium"></div>
+      </div>
+      
+      <div class="volume-slider">
+        <div class="volume-percentage"></div>
+      </div>
+    </div>
+  </div>
+</div>
+		</div>
+	</div>
+
+<script type="text/javascript">
+	const audioPlayer = document.querySelector(".audio-player");
+const audio = new Audio(
+  "assets/audio/ICE CREAM SUNDAY - VOL. 12_ HUNTING DOG.mp3"
+);
+//credit for song: Adrian kreativaweb@gmail.com
+
+console.dir(audio);
+
+audio.addEventListener(
+  "loadeddata",
+  () => {
+    audioPlayer.querySelector(".time .length").textContent = getTimeCodeFromNum(
+      audio.duration
+    );
+    audio.volume = .75;
+  },
+  false
+);
+
+//click on timeline to skip around
+const timeline = audioPlayer.querySelector(".timeline");
+timeline.addEventListener("click", e => {
+  const timelineWidth = window.getComputedStyle(timeline).width;
+  const timeToSeek = e.offsetX / parseInt(timelineWidth) * audio.duration;
+  audio.currentTime = timeToSeek;
+}, false);
+
+//click volume slider to change volume
+const volumeSlider = audioPlayer.querySelector(".controls .volume-slider");
+volumeSlider.addEventListener('click', e => {
+  const sliderWidth = window.getComputedStyle(volumeSlider).width;
+  const newVolume = e.offsetX / parseInt(sliderWidth);
+  audio.volume = newVolume;
+  audioPlayer.querySelector(".controls .volume-percentage").style.width = newVolume * 100 + '%';
+}, false)
+
+//check audio percentage and update time accordingly
+setInterval(() => {
+  const progressBar = audioPlayer.querySelector(".progress");
+  progressBar.style.width = audio.currentTime / audio.duration * 100 + "%";
+  audioPlayer.querySelector(".time .current").textContent = getTimeCodeFromNum(
+    audio.currentTime
+  );
+}, 500);
+
+//toggle between playing and pausing on button click
+const playBtn = audioPlayer.querySelector(".controls .toggle-play");
+playBtn.addEventListener(
+  "click",
+  () => {
+    if (audio.paused) {
+      playBtn.classList.remove("play");
+      playBtn.classList.add("pause");
+      audio.play();
+    } else {
+      playBtn.classList.remove("pause");
+      playBtn.classList.add("play");
+      audio.pause();
+    }
+  },
+  false
+);
+
+audioPlayer.querySelector(".volume-button").addEventListener("click", () => {
+  const volumeEl = audioPlayer.querySelector(".volume-container .volume");
+  audio.muted = !audio.muted;
+  if (audio.muted) {
+    volumeEl.classList.remove("icono-volumeMedium");
+    volumeEl.classList.add("icono-volumeMute");
+  } else {
+    volumeEl.classList.add("icono-volumeMedium");
+    volumeEl.classList.remove("icono-volumeMute");
+  }
+});
+
+//turn 128 seconds into 2:08
+function getTimeCodeFromNum(num) {
+  let seconds = parseInt(num);
+  let minutes = parseInt(seconds / 60);
+  seconds -= minutes * 60;
+  const hours = parseInt(minutes / 60);
+  minutes -= hours * 60;
+
+  if (hours === 0) return `${minutes}:${String(seconds % 60).padStart(2, 0)}`;
+  return `${String(hours).padStart(2, 0)}:${minutes}:${String(
+    seconds % 60
+  ).padStart(2, 0)}`;
+}
+
+</script>
+
+</section>
+
+<script type="text/javascript">
+	
+$(document).ready(function(){
+  $("#community-member-name.second").click(function(){
+  	$('#community-container.bedspread-radio').css('display', 'flex');
+    $("#home-container").slideUp(1000);
+    $("#community-container.bedspread-radio").slideDown(1000);
+  });
+}); 
+
+$(document).ready(function(){
+  $("#small-logo-container.three").click(function(){
+  	$("#image-slider-container.bedspread-radio").slideToggle( "slow" );
+    $("#navigation-menu-container.three").slideToggle( "slow" );
+  });
+});
+
+</script>
+
+<section id="community-container" class="bedspread-radio">
+	<div id="one-third">
+		<div id="small-logo-container" class="three">
+			<div id="small-logo"></div>
+		</div>
+		<div id="image-slider-container" class="bedspread-radio">
+		</div>
+		<div id="navigation-menu-container" class="three">
+			<div id="navigation-menu-hr-container"> <hr id="navigation-menu-hr"> </div>
+			<div id="navigation-menu-list">
+				<div id="navigation-section">
+					<div id="navigation-section-hr-container"> <hr id="navigation-section-hr"> </div>
+					<div id="navigation-section-name"> ABOUT </div>
+				</div>
+				<div id="navigation-section">
+					<div id="navigation-section-hr-container"> <hr id="navigation-section-hr"> </div>
+					<div id="navigation-section-name"> ARTISTS </div>
+<!-- 		<div id="artists-sub-menu-2">
+			<div id="artists-sub-hr-container-2"> <hr id="artists-sub-hr-2"> </div>
+			<div id="artists-sub-menu-list-container-2">
+				<div id="artists-list-member-2">
+					<div id="artists-list-member-hr-container-2"> <hr id="artists-list-member-hr-2"></div>
+					<div id="artists-member-name-2"> HOUSE OF KENZO </div>
+				</div>
+				<div id="artists-list-member-2">
+					<div id="artists-list-member-hr-container-2"> <hr id="artists-list-member-hr-2"></div>
+					<div id="artists-member-name-2"> MYSHA </div>
+				</div>
+				<div id="artists-list-member-2">
+					<div id="artists-list-member-hr-container-2"> <hr id="artists-list-member-hr-2"></div>
+					<div id="artists-member-name-2"> RABIT </div>
+				</div>
+				<div id="artists-list-member-2">
+					<div id="artists-list-member-hr-container-2"> <hr id="artists-list-member-hr-2"></div>
+					<div id="artists-member-name-2"> PINK SIIFU </div>
+				</div>				
+			</div>
+		</div>	 -->					
+				</div>
+				<div id="navigation-section">
+					<div id="navigation-section-hr-container"> <hr id="navigation-section-hr"> </div>
+					<div id="navigation-section-name"> COMMUNITY </div>
+		<div id="community-sub-menu-2">
+			<div id="community-sub-hr-container-2"> <hr id="community-sub-hr-2"> </div>
+			<div id="community-sub-menu-list-container-2">
+				<div id="community-list-member-2">
+					<div id="community-list-member-hr-container-2"> <hr id="community-list-member-hr-2"></div>
+					<div id="community-member-name-2"> ICE CREAM SOCIAL </div>
+				</div>
+				<div id="community-list-member-2">
+					<div id="community-list-member-hr-container-2"> <hr id="community-list-member-hr-2"></div>
+					<div id="community-member-name-2"> BEDSPREAD RADIO </div>
+				</div>
+				<div id="community-list-member-2">
+					<div id="community-list-member-hr-container-2"> <hr id="community-list-member-hr-2"></div>
+					<div id="community-member-name-2"> SOFTWEB </div>
+				</div>
+			</div>
+		</div>					
+				</div>
+				<div id="navigation-section">
+					<div id="navigation-section-hr-container"> <hr id="navigation-section-hr"> </div>
+					<div id="navigation-section-name"> STAGE (Coming Soon) </div>
+				</div>
+				<div id="navigation-section">
+					<div id="navigation-section-hr-container"> <hr id="navigation-section-hr"> </div>
+					<div id="navigation-section-name"> STORE (Coming Soon) </div>
+				</div>				
+			</div>	
+		</div>
+	</div>
+	<div id="two-third" class="bedspread-radio">
+		<div id="image-slider-container" class="bedspreadradio">
+			<div id="image-slider">
+				<div class="sliderimg">
+					<img src="./assets/images/IMG_9029 (1)-min.jpg">
+				</div>	
+				<div class="sliderimg">
+					<img src="./assets/images/1U2A0740-min.JPG">
+				</div>
+				<div class="sliderimg">
+					<img src="./assets/images/1U2A0696-min.JPG">
+				</div>
+				<div class="sliderimg">
+					<img src="./assets/images/IMG_9235-min.jpg">
+				</div>
+				<div class="sliderimg">
+					<img src="./assets/images/1U2A0730-min.JPG">
+				</div>
+				<div class="sliderimg">
+					<img src="./assets/images/IMG_7909.jpg">
+				</div>												
+			</div>
+		</div>		
+	</div>
+	<div id="three-third">
+		<div id="page-title"> BIO </div>
+		<p id="page-copy"> 
+			Bedspread is a radio show hosted by Jessika Blanks and Sarah Callaway,  two musicians from Richmond, Virginia. Using the airwaves to showcase independent artists and providing a platform for local non-profits to be heard. <br><br>
+			Currently on the independent radio station The Bridge (103.3 Fm WBDB-LP) Weekly Monday nights.	
+			<br><br>
+			<a href="http://www.bedspreadradio.com/" target="_blank"> Website </a> <br><br>
+			<a href="https://soundcloud.com/bedspreadradio" target="_blank"> SoundCloud </a> <br><br>
+			<a href="https://www.instagram.com/bedspreadradio/" target="_blank"> Instagram </a> <br><br>
+			<a href="https://www.bridge1033.org/" target="_blank"> The bridge </a> <br><br>
+			<a href="https://mutualaiddisasterrelief.org/co-conspirators/mad-rva/?doing_wp_cron=1614724772.4481799602508544921875" target="_blank"> Madrva </a> <br><br>
+			<a href="https://www.richmondpeaceteam.org/" target="_blank"> Jacksonward Peace Team </a> <br><br>
+			<a href="https://www.rrfp.net/" target="_blank"> Richmond Reproductive Act </a> <br>
+		</p>
+
+		<div id="audio-player-container">
+			<audio>
+  <source src="assets/audio/bedspreadnedemixsacpunk.mp3"  type="audio/mp3">
+</audio> 
+
+<div style="width: 50px; height: 50px;"></div>
+<div class="audio-player-2">
+  <div class="timeline-2">
+    <div class="progress-2"></div>
+  </div>
+  <div class="controls-2">
+    <div class="play-container-2">
+      <div class="toggle-play-2 play">
+    </div>
+    </div>
+    <div class="time-2">
+      <div class="current-2">0:00</div>
+      <div class="divider-2">/</div>
+      <div class="length-2"></div>
+    </div>
+<!--     <div class="name">Music Song</div> -->
+<!--     credit for icon to https://saeedalipoor.github.io/icono/ -->
+    <div class="volume-container-2">
+      <div class="volume-button-2">
+        <div class="volume-2 icono-volumeMedium-2"></div>
+      </div>
+      
+      <div class="volume-slider-2">
+        <div class="volume-percentage-2"></div>
+      </div>
+    </div>
+  </div>
+</div>
+		</div>	
+
+	</div>
+</section>
+
+<script type="text/javascript">
+	const audioPlayer2 = document.querySelector(".audio-player-2");
+const audio2 = new Audio(
+  "assets/audio/bedspreadnedemixsacpunk.mp3"
+);
+//credit for song: Adrian kreativaweb@gmail.com
+
+console.dir(audio2);
+
+audio2.addEventListener(
+  "loadeddata",
+  () => {
+    audioPlayer2.querySelector(".time-2 .length-2").textContent = getTimeCodeFromNum(
+      audio2.duration
+    );
+    audio2.volume = .75;
+  },
+  false
+);
+
+//click on timeline to skip around
+const timeline2 = audioPlayer2.querySelector(".timeline-2");
+timeline2.addEventListener("click", e => {
+  const timelineWidth = window.getComputedStyle(timeline2).width;
+  const timeToSeek = e.offsetX / parseInt(timelineWidth) * audio2.duration;
+  audio2.currentTime = timeToSeek;
+}, false);
+
+//click volume slider to change volume
+const volumeSlider2 = audioPlayer2.querySelector(".controls-2 .volume-slider-2");
+volumeSlider2.addEventListener('click', e => {
+  const sliderWidth = window.getComputedStyle(volumeSlider2).width;
+  const newVolume = e.offsetX / parseInt(sliderWidth);
+  audio2.volume = newVolume;
+  audioPlayer2.querySelector(".controls-2 .volume-percentage-2").style.width = newVolume * 100 + '%';
+}, false)
+
+//check audio percentage and update time accordingly
+setInterval(() => {
+  const progressBar = audioPlayer2.querySelector(".progress-2");
+  progressBar.style.width = audio2.currentTime / audio2.duration * 100 + "%";
+  audioPlayer2.querySelector(".time-2 .current-2").textContent = getTimeCodeFromNum(
+    audio2.currentTime
+  );
+}, 500);
+
+//toggle between playing and pausing on button click
+const playBtn2 = audioPlayer2.querySelector(".controls-2 .toggle-play-2");
+playBtn2.addEventListener(
+  "click",
+  () => {
+    if (audio2.paused) {
+      playBtn2.classList.remove("play");
+      playBtn2.classList.add("pause");
+      audio2.play();
+    } else {
+      playBtn.classList.remove("pause");
+      playBtn.classList.add("play");
+      audio2.pause();
+    }
+  },
+  false
+);
+
+audioPlayer2.querySelector(".volume-button-2").addEventListener("click", () => {
+  const volumeEl = audioPlayer2.querySelector(".volume-container-2 .volume-2");
+  audio2.muted = !audio2.muted;
+  if (audio2.muted) {
+    volumeEl.classList.remove("icono-volumeMedium-2");
+    volumeEl.classList.add("icono-volumeMute-2");
+  } else {
+    volumeEl.classList.add("icono-volumeMedium-2");
+    volumeEl.classList.remove("icono-volumeMute-2");
+  }
+});
+
+//turn 128 seconds into 2:08
+function getTimeCodeFromNum(num) {
+  let seconds = parseInt(num);
+  let minutes = parseInt(seconds / 60);
+  seconds -= minutes * 60;
+  const hours = parseInt(minutes / 60);
+  minutes -= hours * 60;
+
+  if (hours === 0) return `${minutes}:${String(seconds % 60).padStart(2, 0)}`;
+  return `${String(hours).padStart(2, 0)}:${minutes}:${String(
+    seconds % 60
+  ).padStart(2, 0)}`;
+}
+
+</script>
+
+
+<script type="text/javascript">	
+
+// const canvas = document.querySelector('canvas');
+// const ctx = canvas.getContext('2d');
+// const width = window.innerWidth;
+// const height = window.innerHeight;
+
+// canvas.width = width;
+// canvas.height = height;
+
+// // Settings
+// const settings = {
+//   density: 0.3, // alpha value for the gradient
+//   clickSize: 100, // Size of the tracked area.
+//   demoMode: true,
+//   clearScreen: function () {
+//     ctx.clearRect(0, 0, width, height);
+//   } };
+
+
+// let drawing = false;
+
+// /* 
+//     This is the only thing that really matters for the heat map out of all the rest of the code.
+//     All you do is check the alpha value, and set the color when its between a certain threshold you set.
+//     For example an alpha of 255 or greater meants its going to be red.
+    
+//     Not even going to lie I've been using this code for years, I can't even remember where I got the threshhold/values but they work and look great.
+// */
+// function makeItHot(x, y, width, height) {
+//   // Generate the colors
+//   let imgData = ctx.getImageData(x, y, width, height),
+//   pixData = imgData.data;
+
+//   for (let i = 0, len = pixData.length; i < len; i += 4) {
+//     if (pixData[i + 3] !== 0) {
+
+//       let alpha = pixData[i + 3],
+//       r = 0,
+//       g = 0,
+//       b = 0,
+//       comp = 0;
+
+//       if (alpha <= 255 && alpha >= 235) {
+//         comp = 255 - alpha;
+//         r = 255 - comp;
+//         g = comp * 12;
+//       } else if (alpha <= 234 && alpha >= 200) {
+//         comp = 234 - alpha;
+//         r = 255 - comp * 8;
+//         g = 255;
+//       } else if (alpha <= 199 && alpha >= 150) {
+//         comp = 199 - alpha;
+//         g = 255;
+//         b = comp * 5;
+//       } else if (alpha <= 149 && alpha >= 100) {
+//         comp = 149 - alpha;
+//         g = 255 - comp * 5;
+//         b = 255;
+//       } else {
+//         b = 255;
+//       }
+
+//       pixData[i] = r;
+//       pixData[i + 1] = g;
+//       pixData[i + 2] = b;
+//       pixData[i + 3] = alpha;
+//     }
+//   }
+
+//   ctx.putImageData(imgData, x, y);
+// }
+
+// // Just some events.
+// canvas.addEventListener('mousedown', e => {
+//   settings.demoMode = false;
+//   if (!drawing) {
+//     drawing = true;
+//   }
+// });
+
+// canvas.addEventListener('mouseup', e => {
+//   if (drawing) {
+//     drawing = false;
+//   }
+// });
+
+// canvas.addEventListener('mousemove', e => {
+//   if (drawing) {
+//     plotPoint(e.clientX, e.clientY);
+//   }
+// });
+
+// /* 
+//    Creates the gradient and plots the point. Gradient creation could be done outside of this one time instead of each
+//    time, but since I have settings that change on the demo I do it here.
+// */
+// function plotPoint(x, y) {
+//   let clickGradient = ctx.createRadialGradient(0, 0, 1, 0, 0, settings.clickSize);
+
+//   clickGradient.addColorStop(0, `rgba(0,0,0,${settings.density})`);
+//   clickGradient.addColorStop(1, 'rgba(0,0,0,0)');
+//   ctx.fillStyle = clickGradient;
+
+//   ctx.save();
+//   ctx.translate(x, y);
+//   ctx.beginPath();
+//   ctx.arc(0, 0, settings.clickSize, 0, 4 * Math.PI);
+//   ctx.fill();
+//   ctx.restore();
+
+//   makeItHot(x - settings.clickSize, y - settings.clickSize, settings.clickSize * 2, settings.clickSize * 2);
+// }
+
+// // Demo Mode not important for the actual heat map.
+// let marker = {
+//   x: 0,
+//   y: 0,
+//   tx: Math.random() * width,
+//   ty: Math.random() * height };
+
+
+// function demo() {
+//   if (settings.demoMode) {
+
+//     let dx = marker.tx - marker.x,
+//     dy = marker.ty - marker.y,
+//     dist = Math.sqrt(dx * dx + dy * dy);
+
+//     if (dist > 30) {
+//       marker.x += dx / 50;
+//       marker.y += dy / 30;
+//     } else {
+//       marker.tx = Math.random() * width;
+//       marker.ty = Math.random() * height;
+//     }
+//     plotPoint(marker.x, marker.y);
+//   }
+//   requestAnimationFrame(demo);
+// }
+
+
+// demo();	
+
+</script>		
+
+<script type="text/javascript">
+
+$(document).ready(function(){
+  $("#community-member-name.third").click(function(){
+  	$('#community-container.softweb').css('display', 'flex');
+    $("#home-container").slideUp(1000);
+    $("#community-container.softweb").slideDown(1000);
+  });
+}); 
+
+$(document).ready(function(){
+  $("#small-logo-container.four").click(function(){
+  	$("#image-slider-container.softweb").slideToggle( "slow" );
+    $("#navigation-menu-container.four").slideToggle( "slow" );
+  });
+});	
+	
+</script>
+
+<section id="community-container" class="softweb">
+	<div id="one-third">
+		<div id="small-logo-container" class="four">
+			<div id="small-logo"></div>
+		</div>
+		<div id="image-slider-container" class="softweb"></div>
+		<div id="navigation-menu-container" class="four">
+			<div id="navigation-menu-hr-container"> <hr id="navigation-menu-hr"> </div>
+			<div id="navigation-menu-list">
+				<div id="navigation-section">
+					<div id="navigation-section-hr-container"> <hr id="navigation-section-hr"> </div>
+					<div id="navigation-section-name"> ABOUT </div>
+				</div>
+				<div id="navigation-section">
+					<div id="navigation-section-hr-container"> <hr id="navigation-section-hr"> </div>
+					<div id="navigation-section-name"> ARTISTS </div>
+<!-- 		<div id="artists-sub-menu-2">
+			<div id="artists-sub-hr-container-2"> <hr id="artists-sub-hr-2"> </div>
+			<div id="artists-sub-menu-list-container-2">
+				<div id="artists-list-member-2">
+					<div id="artists-list-member-hr-container-2"> <hr id="artists-list-member-hr-2"></div>
+					<div id="artists-member-name-2"> HOUSE OF KENZO </div>
+				</div>
+				<div id="artists-list-member-2">
+					<div id="artists-list-member-hr-container-2"> <hr id="artists-list-member-hr-2"></div>
+					<div id="artists-member-name-2"> MYSHA </div>
+				</div>
+				<div id="artists-list-member-2">
+					<div id="artists-list-member-hr-container-2"> <hr id="artists-list-member-hr-2"></div>
+					<div id="artists-member-name-2"> RABIT </div>
+				</div>
+				<div id="artists-list-member-2">
+					<div id="artists-list-member-hr-container-2"> <hr id="artists-list-member-hr-2"></div>
+					<div id="artists-member-name-2"> PINK SIIFU </div>
+				</div>				
+			</div>
+		</div>	 -->					
+				</div>
+				<div id="navigation-section">
+					<div id="navigation-section-hr-container"> <hr id="navigation-section-hr"> </div>
+					<div id="navigation-section-name"> COMMUNITY </div>
+		<div id="community-sub-menu-2">
+			<div id="community-sub-hr-container-2"> <hr id="community-sub-hr-2"> </div>
+			<div id="community-sub-menu-list-container-2">
+				<div id="community-list-member-2">
+					<div id="community-list-member-hr-container-2"> <hr id="community-list-member-hr-2"></div>
+					<div id="community-member-name-2"> ICE CREAM SOCIAL </div>
+				</div>
+				<div id="community-list-member-2">
+					<div id="community-list-member-hr-container-2"> <hr id="community-list-member-hr-2"></div>
+					<div id="community-member-name-2"> BEDSPREAD RADIO </div>
+				</div>
+				<div id="community-list-member-2">
+					<div id="community-list-member-hr-container-2"> <hr id="community-list-member-hr-2"></div>
+					<div id="community-member-name-2"> SOFTWEB </div>
+				</div>
+			</div>
+		</div>					
+				</div>
+				<div id="navigation-section">
+					<div id="navigation-section-hr-container"> <hr id="navigation-section-hr"> </div>
+					<div id="navigation-section-name"> STAGE (Coming Soon) </div>
+				</div>
+				<div id="navigation-section">
+					<div id="navigation-section-hr-container"> <hr id="navigation-section-hr"> </div>
+					<div id="navigation-section-name"> STORE (Coming Soon) </div>
+				</div>				
+			</div>	
+		</div>
+	</div>
+	<div id="two-third" class="softweb">
+		<div id="image-slider-container" class="soft-web">
+			<div id="image-slider-3">
+				<div class="sliderimg-3">
+					<img src="./assets/images/Copy of IMG_0474-min.jpg">
+				</div>	
+				<div class="sliderimg-3">
+					<img src="./assets/images/Copy of IMG_0581-min.JPG">
+				</div>
+				<div class="sliderimg-3">
+					<img src="./assets/images/Copy of IMG_2187-min.JPG">
+				</div>
+				<div class="sliderimg-3">
+					<img src="./assets/images/Copy of IMG_0581.JPG">
+				</div>
+				<div class="sliderimg-3">
+					<img src="./assets/images/Copy of IMG_5076 - Soft Web.JPG">
+				</div>
+			</div>
+		</div>		
+	</div>
+	<div id="three-third">
+		<div id="page-title"> BIO </div>
+		<p id="page-copy"> 
+			SOFT WEB studio collective is paige (she/they), mars (he/they), hạ (name/they), eli (she/they) & maeve (they/them) <br><br>
+			xXx collectively~ artists, witchcrafters, teachers, writers, spacemakers <br><br>
+			<span id="bold"> ~ we center creative spaces for and by trans + queer Black people, Indigenous people, and people of color ~ </span> 
+			<br><br>
+			<span id="bold">OUR VALUES</span> <br><br>
+			xXx We deserve space (as POC, queer/trans ppl, femmes, artists, witches, pretty bois, etc) !!! <br><br>
+			xXx Our survival & thriving (esp. via art) is political resistance !!! (see <a href="https://makinglearning.files.wordpress.com/2014/01/poetry-is-not-a-luxury-audre-lorde.pdf" target="_blank"> Audre Lorde's "Poetry Is Not a Luxury" </a>) <br><br>
+			xXx To be part of our community requires TRUST, COMMUNICATION, RACIAL JUSTICE & ACCOUNTABILITY !!! <br><br>
+			xXx We do the WORK of LOVE knowing it's the work towards !!! <3 LIBERATION <3 !!! <br><br>
+			<span id="bold">♥NUESTRXS VALORES♥ (translation by Tomiko Pardo) 
+			<br><br>
+			xXx Merecemos el espacio (como gente de color, gente queer/trans, gente femme, artistas, brujes, chulitxs, etc.) !!! <br><br>
+			xXx Nuestra sobrevivencia y manera de prosperar (especialmente a traves del arte) es resistencia política !!! <br>
+			(Lea “ La Poesía no Es un Lujo” escrita por Audrey Lorde) <br><br>
+			xXx Ser parte de nuestra comunidad necesita la CONFIANZA, la COMUNICACIÓN, la JUSTICIA RACIAL, y la RESPONSABILIDAD POR NUESTRXS ACCIÓNES !!! <br><br>
+			xXx Nosotrxs hacemos el LABOR de AMOR sabiendo que es el trabajo hacia la !!! ♥ LIBERACIÓN ♥ !!! </span><br><br>
+			SOFT WEB is a shapeshifting future-bound collective. We imagine the worlds we want and weave them into existence at the intersection of social justice and multidisciplinary art. SOFT WEB is a trans, queer, multiracial (Black+SE Asian+white), cross-class collective that provides a vital network of support centering creative space for/by trans+queer Black people, Indigenous people, and people of color (TQBIPOC). We grow relationships based on shared vulnerability and mutual support— a soft web of shared experiences that supports our collective, our creativity, and our communities. Through our creative practices, DIY dream-workspaces, music shows, parties, fundraisers, workshops, and other transformative events, we build this web to transform fears and pain into affirmations and creation. We have visited the field of possibility (the void) and hope to cast new patterns— built from love— in this space. <br><br>
+			<span id="bold">Our history </span> <br>
+			SOFT WEB studio collective began in 2016 when we formed a shared studio workspace in Tsenacommacah, stolen Powhatan+Monacan+Manahoac territory so-called Richmond, VA. Previous configurations of soft webbies included Jelani, Tomiko, and Zahir. For about 3 years, the workspace grew into a DIY community center and creative venue for/by southern trans+queer freaks+nerds+activists+creatives that hosted music shows, experimental parties, fundraisers, workshops, and other events centering TQBIPOC. In collaboration with other local, values-aligned DIY creative collectives like Ice Cream Support Group, 3 Moons, Richmond Reproductive Freedom Project, and Great Dismal, we have co-created and hosted an incredible mix of sweaty, joyful, surprising, and tuff puff events. Center to our work and play have been soft webbies’ creativity in our own ways~ through creating individual and collabo zines, music, spells, prints, textiles, and performances. In the transition out of a physical studio space, SOFT WEB became international, borderless, and an elusive digi(tal) entity. <br><br>
+			<span id="bold">Current webbie status </span><br>
+			Relationship status: partnered to each other + ready to mingle <br>
+			Signs: Twin Scorpios, Pisces, Leo + Gemini <br>
+			Location: Borderless <br>
+			Current Interests/Dreams: Moon cycles, plants, co-ops/collectives, intergenerational healing, herbs, babies, carework, elders, stretching, suffering less, death doula-ing, sci-fi, un-stealing my ancestral lands from the govt, harm reduction for drug users, risographs, multilingual spaces (internal+external), breaking the simulation then transcending it, queer trailer park dreams, pets, backyard fires, zines, stargazing, digital studio time, sewing our way thru <br><br>
+			In Progress: Surviving this damn apocalypse y’all !!! while maintaining our dignity, creativity, and love for ourselves/each other/our creations/our loved ones and communities. <br><br>
+			<span id="bold">contact info: </span><br>
+			softwebstudiocollective@gmail.com <br>
+			https://www.patreon.com/softweb <br>
+			https://www.instagram.com/soft.web/
+		</p>
+		<div id="page-title"> INTERVIEW </div>
+
+		<p id="page-copy">
+		Voices: <span id="interview-dropshadow-1">Hạ</span>, <span id="interview-dropshadow-2">Eli</span>, <span id="interview-dropshadow-3">Paige</span>
+		<br><br>
+		1. I know you began with your shared studio - but how did you link up prior to this? What were the conversations pre-Soft Web, and shared arcs of your individual practices, that made a studio space together seem appealing? <br><br>
+		<span id="interview-dropshadow-1"> Hạ: We were born in flames and have been soft webbies since before we named ourselves. We were connected in a lot of ways including through community organizing, the Richmond Reproductive Freedom Project collective and their Fund-a-Thon, craft fairs, Butterflies Live (haunted house), a book club, backyard fires, art school (ugh), Rock Bottom (another portal), and in general, small city small/ town vibes~ </span> <br><br>
+		<span id="interview-dropshadow-2"> In one beginning… We were in New York together with Dandy and Hiếu. We (Eli, Maeve, and Mars) were on the phone and someone let us know Rag and Bones (bike collective) was renting out this back studio -- this little tiny room -- that would be so rad to have a space to make art in! </span> <br><br>
+		<span id="interview-dropshadow-2"> In another beginning... When did i meet Hạ? Through Hiếu (their sibling) but we met but not really met because Hạ was still an emotional hostage of school. With mars, I met mars through friends at an RRFP benefit show. We became friends and weren’t really that tight but went to new york and stayed with dandy and went to a G.L.O.S.S. show? We took a bus up there and that trip was when we became really good friends. With Maeve, I met them because they volunteered with girls rock. We didn’t know each other super well, and then I remember the first time we really hung out one on one we were nannying and met up with our babies at a park and watched ducks. And Paige I met through Butterflies and coming to y’all’s house. </span> <br><br>
+		<span id="interview-dropshadow-2"> Right when Soft Web was starting, i was leaving Girls Rock RVA and I was so burnt out. Something I heard a lot when I was working as a volunteer coordinator was, “I wish a space existed like this for me when I was younger” So something I saw in girls rock was that people were coming to the space from a place of deprivation. They hadn’t necessarily felt like they'd had access to a creative space for themselves as adults but wanted to creative that vision for younger generations. That’s what brought me to it too… creating a space for myself and other queer and trans people, femmes, people of color -- it felt important to have and make art together -- that came first before the larger community space. </span> <br><br>
+
+		2. Can you say more about what was happening at the Soft Web Studio space? On any given day, how were you collabing with each other? <br><br>
+		<span id="interview-dropshadow-2"> I loved sharing gear and booping around with people in the space, there was this energy of experimentation and openness that, like Eli said, is hard to come by especially for BLACK QUEER & TRANS ARTISTS. </span> <br><br>
+		<span id="interview-dropshadow-3"> I always appreciated we are a collective and friend group that shares arts and creations with each other, gas each other up, gives each other feedback. Collaboration looked like and still looks like being excited for each other, being into each other’s art. Y’all are all my favorite artists! Materially, it was nice to have a place, a destination to go with an abundance of fabric and sewing machines. </span> <br><br>
+		<span id="interview-dropshadow-1"> At the heart of it, every day was part of building and nurturing the web: sharing supplies, co-creating emotional and creative space, scheming and dreaming, equitably splitting proceeds made from hosting events -- ALWAYS paying artists including locals, rent support sliding scale for webbies across class, funding local grassroots groups in justice movements. There were regular open studio days for folks and local orgs to come by, some of which were BIPOC only spaces. </span>  <br><br>
+		<span id="interview-dropshadow-2"> This reminds me how even the key to the space was available for folks to use. We weren't always there, our physical presence was not central (tho our spirits are essential hehe)... making a web is a practice in decentralization. </span> <br><br>
+		<span id="interview-dropshadow-1"> Some folks who came by: 
+		Richmond Reproductive Freedom Project, Richmond Doula Project, Richmond Chapter of Southerners on New Ground, ICE out of RVA (complicated knowing what we know now…), Virginia Anti Violence Project, folks doing HIV testing, Julie Karr for NARCAN training, Ice Cream Support Group, Richmond Zinefest, Great Dismal, Richmond Mutual Aid Disaster Relief.
+ 		</span> <br><br>
+
+		3. What were some notable/larger events you were able to pull off during your time there? <br><br>
+		<span id="interview-dropshadow-1"> Honestly, I felt like we took note of it ALL. </span> <br><br>
+		<span id="interview-dropshadow-2"> I liked hạ’s birthday party where friends and fam made a hot pot meal together, That was when I really felt like it was an intergenerational space for healing. </span> <br><br>
+		<span id="interview-dropshadow-2"> And CRUSH REVEAL WOW ! Creating the Crush Reveal zine is such a beautiful memory for me. That was my first time feeling like I was in the web. Y’all would come over to butterflies and there was so much love, I was happy to share in it. </span> <br><br>
+		<span id="interview-dropshadow-1"> Yes and the follow up to CRUSH REVEAL zine+party was the *chefs kiss* and sober HOMOCOMING party in collab with Mo and Rin. </span> <br><br>
+		<span id="interview-dropshadow-3"> I loved homocoming too! Melo played a song that went out to all the cancer moons, i never before felt so seen in my gay emo-ness </span> <br><br>
+		<span id="interview-dropshadow-3"> Me and Maeve hosted an all ages art day / 2 day art camp. I really learned about my boundaries, especially post-Girls Rock burnout. </span> <br><br>
+		<span id="interview-dropshadow-3"> One of my favorite larger shows there was when TAVISHI, spellling, and kohinoorgasm came -- was a smaller show, but they were so talented!  </span> <br><br>
+		<span id="interview-dropshadow-3"> The craft fairs that benefitted RRFP! Such a collaborative thing -- got to meet so many artists that way, so many music performers came thru but craft fair was a space for folks to share their visual art. I really liked how full it felt! It was in the parking lot, out front, everywhere. So shocked how well they did! </span> <br><br>
+		4. Although it may be sensitive, I’m also interested to hear about the end of that physical space. Do you just view it as transitioning out of that chapter of your practice? Has anything taken its place for you within Richmond? <br><br>
+		<span id="interview-dropshadow-1"> Have you ever been so bone weary tired and in the thick of it, realized it was time to turn to goo and retreat back into chrysalis? </span> <br><br>
+		<span id="interview-dropshadow-2"> I view it as “we were a preview of encroaching gentrification of Richmond/Scott's Addition.” 
+		Nothing took its place, there’s different DIY spaces, but nothing was what Soft Web was. </span> <br><br>
+		<span id="interview-dropshadow-1"> Of course DIY lives on in our community, notably space litter opened after we closed our physical studio. Like any DIY space, soft web the DIY community center and shared studio was uniquely us and therefore irreplaceable. </span> <br><br>
+		<span id="interview-dropshadow-2"> Of course DIY lives on in our community, notably space litter opened after we closed our physical studio. Like any DIY space, soft web the DIY community center and shared studio was uniquely us and therefore irreplaceable. </span> <br><br>
+
+		5. Following off #4, how would you update your model, or hope other community spaces could adapt for the future in Richmond? <br><br>
+		<span id="interview-dropshadow-1"> We realized the necessity for us to HEAL and co-create spaciousness for ourselves as much as the folks we hosted and welcomed into the web. At this point, I think we’re more intentional about our collaborations, with emphasis on value alignment as foundation to work together/share space. IDK, I just hope there’s as much love and partnership in any community space. </span> <br><br>
+		<span id="interview-dropshadow-1"> Also, I think increased accessibility in general is always possible for any community space. For example: wheelchair accessible first floor bathrooms, no stair steps to the music show, chairs at music shows as baseline. Leah Lakshmi Piepzna Samarasinha and other disability justice organizers have written so much on this. </span> <br><br>
+
+		6. How have the goals of Softweb changed now that you’re decentralized + digital? <br><br>
+		<span id="interview-dropshadow-1"> No, I think our goals are the same, they’re just more clear to us without the noise of building maintenance and almost daily/weekly event planning/logistics LOL. </span> <br><br>
+
+		7. I’m sure there are tons of reasons why being mostly digital could be a difficulty - but what are some ways it’s informed your practice (communal or individual) in positive ways? <br><br>
+		<span id="interview-dropshadow-1"> I think i particularly savor any space where all of us can get together in our shared brilliance (for example in our shared writing) now that it’s less frequent/not as simple as biking 10 min away or literally waking up. </span> <br><br>
+		<span id="interview-dropshadow-2"> It’s a lifeline, just to have regular meetings and even though it just started, our saturday studio time, to have space to talk as friends and also not have to always verbally process while making shit together </span> <br><br>
+		<span id="interview-dropshadow-3"> We have been steadily adapting and preparing for the digital future… I’m thinkin about Spiders flying on electric currents… </span> <br><br>
+		<span id="interview-dropshadow-1"> The INTERNET is a WEB and there are miles of cables underneath the ocean connecting us all & servers running hot processing our digi desires </span> <br><br>
+
+		8. What are some ways the Softweb network has helped you (the members) during the past year of COVID? <br><br>
+		<span id="interview-dropshadow-1"> Soft web has been a life line, love line, reminders of adaptability, care across distance  </span> <br><br>
+		<span id="interview-dropshadow-2"> I just dont think I’d be alive, would be dead idk. Having friends during the bullshit that’s occurred over the course of this past year saved my life. </span> <br><br>
+		<span id="interview-dropshadow-1"> #testimony #savedbytheweb </span> <br><br>
+
+		9. You mentioned a shared vulnerability in your mission statement - can you elaborate on that, contrasted with the traditional values of collective one might think of as a “strength in numbers”? <br><br>
+		<span id="interview-dropshadow-3"> IDK, I don’t think these concepts are in contrast with one another. </span> <br><br>
+		<span id="interview-dropshadow-1"> Hard agree, vulnerability IS strength y’all! anything else u heard is cishetpatriarchicalwhitesupremacist propaganda. Just because a group of people are working together doesn’t mean it’s good for them or the world or long-term sustainable — being clear about what / who we care about, our personal struggles and goals, our alignment with struggles toward justice makes our shared work easier (altho not easy). </span> <br><br>
+
+		10. In your mission statement you also reference the Audre Lorde essay ‘Poetry Is Not a Luxury’ - Why did this essay specifically resonate with the project? If you had to reflect, what are the parts of your practice as Softweb that feel the most potent and integral -- embodying Lorde’s ideas of art/poetry as active, lived experience? <br><br>
+		<span id="interview-dropshadow-1"> I had a class once where the teacher said, “The world doesn’t need any more art.” This dude was referencing all the art that lives in landfills, that’s never shown or bought or sold & tbh it really fucked with my creative process for a while — I already come from a family of refugees, immigrants, survivors of war and colonization who always emphasized values of resourcefulness & stewardship. The doubt that creatives of color have about if anything you make matters in the long-run or is just a waste of time/resources is already kicking around my brain because of white supremacist indoctrination… anyways in a feminist literary theory class led by Liz Canfield, i got intro’d to audre lorde’s “poetry is not a luxury” essay and it changed EVERYTHING. “The world doesn’t need any more art” transformed to “The world doesn’t need any more art for/by cishet white men.” </span> <br><br>
+		<span id="interview-dropshadow-2"> Art is vital, especially in its connections to craft. People making quilts, weaving baskets, the functionality of craft -- cooking, cutting hair, singing to get through the day are all craft. </span> <br><br>
+		<span id="interview-dropshadow-1"> And craft has been violently excluded from art in so many ways when they’re the same thing. </span> <br><br>
+		<span id="interview-dropshadow-2"> Everyone in Soft Web is an artist and has a craft and it was very integral in our collective that that art is just as valid. There’s no way to get through the day without having art in it. </span> <br><br>
+		<span id="interview-dropshadow-2"> From the essay, Audre Lorde writes “I feel therefore I can be free” and this connects to the vulnerability question from earlier. All of us practice some form of magic/spirituality, we’re all connected and working thru emotional awareness. </span> <br><br>
+		<span id="interview-dropshadow-3"> My art is not tied to any one medium or a sense of productivity nor does it need to be cosigned by any one academy or institution or scene or what have you. my art practice is my spiritual practice, and once I began to embody and internalize this I felt more free. </span> <br><br>
+		<span id="interview-dropshadow-1"> There are decades of scholarship about the importance of this particular essay by audre lorde, let alone her whole body of work… so we can’t really get into it here AND my interpretation of the essay goes way beyond poetry as lived experience. It is that cishetwhitesupremacistableistpatriarchy creates the lie that poetryis frivolous when in fact it has been and always will be crucial to changing the world when authored by women (and in my reading, includes folks coded as women, feminized, and directly impacted by the harms of both patriarchy and racism). audre lorde’s story is not mine, esp. as a nonBlack person of color, and my understanding of the world is sharper and i have only benefited because she shared her dreams and art with the world around her — from and because of her positionality as a Black women, a queer, gender nonconforming child of caribbean immigrants growing up poor in stolen lenape lands so called NYC and surviving violence and learning to love and grow and create and heal. </span> <br><br>
+		<span id="interview-dropshadow-1"> And just to keep citing her brilliance: “in recognition of loving lies an answer to despair” — audre lorde, Zami <br><br>
+		and fundamentally at soft web, centering creative space for/by queer+trans Black ppl, indigenous ppl, and ppl of color is an act of love that has definitely changed my world. You’d know it too if that’s how you live.
+ </span> <br><br>
+		</p>
+
+		<div id="audio-player-container">
+			<audio>
+  <source src="assets/audio/SOFTWEB- MYCELIUM .NET __ QUARANTINE.mp3"  type="audio/mp3">
+</audio> 
+
+<div style="width: 50px; height: 50px;"></div>
+<div class="audio-player-3">
+  <div class="timeline-3">
+    <div class="progress-3"></div>
+  </div>
+  <div class="controls-3">
+    <div class="play-container-3">
+      <div class="toggle-play-3 play">
+    </div>
+    </div>
+    <div class="time-3">
+      <div class="current-3">0:00</div>
+      <div class="divider-3">/</div>
+      <div class="length-3"></div>
+    </div>
+<!--     <div class="name">Music Song</div> -->
+<!--     credit for icon to https://saeedalipoor.github.io/icono/ -->
+    <div class="volume-container-3">
+      <div class="volume-button-3">
+        <div class="volume-3 icono-volumeMedium-3"></div>
+      </div>
+      
+      <div class="volume-slider-3">
+        <div class="volume-percentage-3"></div>
+      </div>
+    </div>
+  </div>
+</div>
+		</div>			
+	</div>
+
+<script type="text/javascript">
+	const audioPlayer3 = document.querySelector(".audio-player-3");
+const audio3 = new Audio(
+  "assets/audio/SOFTWEB- MYCELIUM .NET __ QUARANTINE.mp3"
+);
+//credit for song: Adrian kreativaweb@gmail.com
+
+console.dir(audio3);
+
+audio3.addEventListener(
+  "loadeddata",
+  () => {
+    audioPlayer3.querySelector(".time-3 .length-3").textContent = getTimeCodeFromNum(
+      audio3.duration
+    );
+    audio3.volume = .75;
+  },
+  false
+);
+
+//click on timeline to skip around
+const timeline3 = audioPlayer3.querySelector(".timeline-3");
+timeline3.addEventListener("click", e => {
+  const timelineWidth = window.getComputedStyle(timeline3).width;
+  const timeToSeek = e.offsetX / parseInt(timelineWidth) * audio3.duration;
+  audio3.currentTime = timeToSeek;
+}, false);
+
+//click volume slider to change volume
+const volumeSlider3 = audioPlayer3.querySelector(".controls-3 .volume-slider-3");
+volumeSlider3.addEventListener('click', e => {
+  const sliderWidth = window.getComputedStyle(volumeSlider3).width;
+  const newVolume = e.offsetX / parseInt(sliderWidth);
+  audio3.volume = newVolume;
+  audioPlayer3.querySelector(".controls-3 .volume-percentage-3").style.width = newVolume * 100 + '%';
+}, false)
+
+//check audio percentage and update time accordingly
+setInterval(() => {
+  const progressBar = audioPlayer3.querySelector(".progress-3");
+  progressBar.style.width = audio3.currentTime / audio3.duration * 100 + "%";
+  audioPlayer3.querySelector(".time-3 .current-3").textContent = getTimeCodeFromNum(
+    audio3.currentTime
+  );
+}, 500);
+
+//toggle between playing and pausing on button click
+const playBtn3 = audioPlayer3.querySelector(".controls-3 .toggle-play-3");
+playBtn3.addEventListener(
+  "click",
+  () => {
+    if (audio3.paused) {
+      playBtn3.classList.remove("play");
+      playBtn3.classList.add("pause");
+      audio3.play();
+    } else {
+      playBtn3.classList.remove("pause");
+      playBtn3.classList.add("play");
+      audio3.pause();
+    }
+  },
+  false
+);
+
+audioPlayer3.querySelector(".volume-button-3").addEventListener("click", () => {
+  const volumeEl = audioPlayer3.querySelector(".volume-container-3 .volume-3");
+  audio3.muted = !audio3.muted;
+  if (audio3.muted) {
+    volumeEl.classList.remove("icono-volumeMedium-3");
+    volumeEl.classList.add("icono-volumeMute-3");
+  } else {
+    volumeEl.classList.add("icono-volumeMedium-3");
+    volumeEl.classList.remove("icono-volumeMute-3");
+  }
+});
+
+//turn 128 seconds into 2:08
+function getTimeCodeFromNum(num) {
+  let seconds = parseInt(num);
+  let minutes = parseInt(seconds / 60);
+  seconds -= minutes * 60;
+  const hours = parseInt(minutes / 60);
+  minutes -= hours * 60;
+
+  if (hours === 0) return `${minutes}:${String(seconds % 60).padStart(2, 0)}`;
+  return `${String(hours).padStart(2, 0)}:${minutes}:${String(
+    seconds % 60
+  ).padStart(2, 0)}`;
+}
+
+</script>
+
+
+</section>
+
+
+</body>
+
+
+</html>
