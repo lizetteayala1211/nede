@@ -85,10 +85,10 @@ body {
 	width: 100%;
 	overflow: hidden;
 	z-index: 2;
-	background: linear-gradient(to bottom, #33ccff 0%, #ff99cc 100%);
+/*	background: linear-gradient(to bottom, #33ccff 0%, #ff99cc 100%);*/
 /*	position: relative;
 	right: 10px;
-/**/  background-color: rgba(255,255,255,0.2);*/
+/**/  /*background-color: rgba(255,255,255,0.2);*/
 }
 
 #logo-container {
@@ -2244,7 +2244,7 @@ body {
     position: absolute;
     top: 11vh;
     left: 0vw;
-    height: 65%;
+    height: 60%;
     width: 60%;
     z-index: 20;
      background-color: white; 
@@ -2398,7 +2398,7 @@ body {
     position: absolute;
     top: 11vh;
     left: 0vw;
-    height: 65%;
+    height: 60%;
     width: 60%;
     z-index: 20;
     /* background-color: red; */
@@ -2492,7 +2492,7 @@ body {
     position: absolute;
     top: 11vh;
     left: 0vw;
-    height: 65%;
+    height: 60%;
     width: 60%;
     z-index: 20;
     /* background-color: red; */
@@ -2575,7 +2575,7 @@ body {
     position: absolute;
     top: 11vh;
     left: 0vw;
-    height: 65%;
+    height: 60%;
     width: 60%;
     z-index: 20;
     /* background-color: red; */
@@ -2715,7 +2715,7 @@ body {
     position: absolute;
     top: 11vh;
     left: 0vw;
-    height: 65%;
+    height: 60%;
     width: 60%;
     z-index: 20;
     /* background-color: red; */
@@ -2756,7 +2756,7 @@ body {
     position: absolute;
     top: 11vh;
     left: 0vw;
-    height: 65%;
+    height: 60%;
     width: 60%;
     z-index: 20;
     /* background-color: red; */
