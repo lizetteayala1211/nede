@@ -82,6 +82,44 @@ $(document).ready(function(){
 
 <script type="text/javascript">	
 
+/*	HOME PAGE SHOW // HIDE ALL OTHERS  */	
+	
+$(document).ready(function(){
+  $("#home-button-container").click(function(){
+  	$("#home-container").css("opacity", 0);
+  	$('#home-container').css('display', 'flex');
+  	$('#about-container').slideUp(1000);
+  	$("#community-container.ice-cream-social").slideUp(1000);
+    $("#community-container.bedspread-radio").slideUp(1000);
+    $("#community-container.softweb").slideUp(1000);
+    $("#artists-container.dame-nature").slideUp(1000);
+    $("#artists-container.huntingdog").slideUp(1000);
+    $("#artists-container.tati").slideUp(1000);
+    $("#home-container").css("opacity", 1);
+    $("#home-container").slideDown(1000);
+  });
+}); 
+
+/*	ABOUT PAGE SHOW // HIDE ALL OTHERS  */	
+	
+$(document).ready(function(){
+  $("#navigation-section-name.first").click(function(){
+  	$("#about-container").css("opacity", 0);
+  	$('#about-container').css('display', 'flex');
+  	$('#home-container').slideUp(1000);
+  	$("#community-container.ice-cream-social").slideUp(1000);
+    $("#community-container.bedspread-radio").slideUp(1000);
+    $("#community-container.softweb").slideUp(1000);
+    $("#artists-container.dame-nature").slideUp(1000);
+    $("#artists-container.huntingdog").slideUp(1000);
+    $("#artists-container.tati").slideUp(1000);
+    $("#about-container").css("opacity", 1);
+    $("#about-container").slideDown(1000);
+  });
+}); 
+
+
+
 /*	ICE CREAM SOCIAL PAGE SHOW // HIDE ALL OTHERS  */	
 	
 $(document).ready(function(){
@@ -238,7 +276,7 @@ $(document).ready(function(){
 			<div id="navigation-menu-list">
 				<div id="navigation-section">
 					<div id="navigation-section-hr-container"> <hr id="navigation-section-hr"> </div>
-					<div id="navigation-section-name"> ABOUT </div>
+					<div id="navigation-section-name" class="first"> ABOUT </div>
 				</div>
 				<div id="navigation-section">
 					<div id="navigation-section-hr-container"> <hr id="navigation-section-hr"> </div>
@@ -363,7 +401,7 @@ $(document).ready(function(){
 			<div id="navigation-menu-list">
 				<div id="navigation-section">
 					<div id="navigation-section-hr-container"> <hr id="navigation-section-hr"> </div>
-					<div id="navigation-section-name"> ABOUT </div>
+					<div id="navigation-section-name" class="first"> ABOUT </div>
 				</div>
 				<div id="navigation-section">
 					<div id="navigation-section-hr-container"> <hr id="navigation-section-hr"> </div>
@@ -634,7 +672,7 @@ $(document).ready(function(){
 			<div id="navigation-menu-list">
 				<div id="navigation-section">
 					<div id="navigation-section-hr-container"> <hr id="navigation-section-hr"> </div>
-					<div id="navigation-section-name"> ABOUT </div>
+					<div id="navigation-section-name" class="first"> ABOUT </div>
 				</div>
 				<div id="navigation-section">
 					<div id="navigation-section-hr-container"> <hr id="navigation-section-hr"> </div>
@@ -898,7 +936,7 @@ $(document).ready(function(){
 			<div id="navigation-menu-list">
 				<div id="navigation-section">
 					<div id="navigation-section-hr-container"> <hr id="navigation-section-hr"> </div>
-					<div id="navigation-section-name"> ABOUT </div>
+					<div id="navigation-section-name" class="first"> ABOUT </div>
 				</div>
 				<div id="navigation-section">
 					<div id="navigation-section-hr-container"> <hr id="navigation-section-hr"> </div>
@@ -1246,7 +1284,7 @@ $(document).ready(function(){
 			<div id="navigation-menu-list">
 				<div id="navigation-section">
 					<div id="navigation-section-hr-container"> <hr id="navigation-section-hr"> </div>
-					<div id="navigation-section-name"> ABOUT </div>
+					<div id="navigation-section-name" class="first"> ABOUT </div>
 				</div>
 				<div id="navigation-section">
 					<div id="navigation-section-hr-container"> <hr id="navigation-section-hr"> </div>
@@ -1374,7 +1412,7 @@ $(document).ready(function(){
 			<div id="navigation-menu-list">
 				<div id="navigation-section">
 					<div id="navigation-section-hr-container"> <hr id="navigation-section-hr"> </div>
-					<div id="navigation-section-name"> ABOUT </div>
+					<div id="navigation-section-name" class="first"> ABOUT </div>
 				</div>
 				<div id="navigation-section">
 					<div id="navigation-section-hr-container"> <hr id="navigation-section-hr"> </div>
@@ -1488,7 +1526,7 @@ $(document).ready(function(){
 			<div id="navigation-menu-list">
 				<div id="navigation-section">
 					<div id="navigation-section-hr-container"> <hr id="navigation-section-hr"> </div>
-					<div id="navigation-section-name"> ABOUT </div>
+					<div id="navigation-section-name" class="first"> ABOUT </div>
 				</div>
 				<div id="navigation-section">
 					<div id="navigation-section-hr-container"> <hr id="navigation-section-hr"> </div>
