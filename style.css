@@ -55,10 +55,19 @@ a:hover {
 	left: -1vw;
 }
 
+#background-container {
+/*	background-color: red;*/
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 101vw;
+	height: 101vh;
+}
+
 #background {
 	position: absolute;
-	top: -10vh;
-	left: -5vw;
+	top: -15vh;
+	left: 0vw;
 /*        -ms-zoom: 1.75;
         -moz-transform: scale(1.75);
         -moz-transform-origin: 40 0;
@@ -1860,11 +1869,26 @@ body {
 
 @media only screen and (min-device-width : 320px) and (max-device-width : 481px) {
 
+#background-container {
+/*	background-color: red;*/
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 101vw;
+	height: 101vh;
+}
+
 #background {
-    display: none;
-    position: absolute;
-    top: -10vh;
-    left: -5vw;
+	position: absolute;
+	top: -15vh;
+	left: 0vw;
+/*        -ms-zoom: 1.75;
+        -moz-transform: scale(1.75);
+        -moz-transform-origin: 40 0;
+        -o-transform: scale(1.75);
+        -o-transform-origin: 40 0;
+        -webkit-transform: scale(1.75);
+        -webkit-transform-origin: 40 0;*/
 }
 
 #small-logo-container {
