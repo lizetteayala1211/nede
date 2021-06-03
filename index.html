@@ -12,7 +12,7 @@
 
 <div id="background-container">
 
-<iframe src="https://openprocessing.org/sketch/1198960/embed/?plusEmbedHash=OTgwNDg0ZGYwMWQyNjc4Y2Q0MzliNzA0NGFkOWYyZjAxNzE1NmQ1MzEwNTUxZWI5MTc0YmM4Y2FkZTBiOTEwNjNhZjIwOTg5MTIxOGE1YTZiOWU3MjA3ZmNjNzczNzBlNTQwMTY2MGIzNWQ0MTIwMWFkNzNjN2FlNzcyOTIwOTRHdU5DOWhqa2dWUzE3MmdnL3JXYXYwSTRVd0EwSkRLQ01odHZCVTV6b2hwTWZISENLa0RHWUhVNUlrc05JREU2RGkvWW1sMmUxbFZVeGtoL1dUdEE5UT09&plusEmbedFullscreen=true" width="100%" height="115%" id="background"></iframe>
+<iframe src="https://openprocessing.org/sketch/1198960/embed/?plusEmbedHash=ZThjODUyNDQ5OTRlMmE2Y2UzZWYxYzA4YzAyMWJkZTM3ZDgxNDJjMmMwNTFlMzIwMzUzNGZkMmM0MWE0NjI5MjE1ZWZmMGE2ZjU5NDQ4NzZiNDNjMTZkMWZlYzE1NTZmNGE4MTNkN2M3MjI3MmZjNzY2MDBkNWY1YzY1NTRkZmNyUEphNWYwY3pUTXVIMy9kN2M4WnU3VlpiWWxVdndZMndjM202cjlZUUJ6UTl0NDNTVEFUZy9yaU9FREw1TDdZKzI5aVRJZHBjeHg5NEdGWVdWa2ozZz09&plusEmbedFullscreen=true" width="100%" height="115%" id="background"></iframe>
 
 </div>
 
@@ -84,6 +84,14 @@ $(document).ready(function(){
 		</div>
 	</div>
 
+<!-- IMAGE SLIDERS MOVE DOWN WHEN LOGO IS CLICKED (MOBILE ONLY) -->	
+
+<script type="text/javascript">
+	$("#small-logo-container").click(function(){
+    $("#two-third").toggleClass("margin");
+});
+</script>
+
 <!-- INNER NAVIGATION SWITCHING BETWEEN PAGES -->
 
 <script type="text/javascript">	
@@ -91,20 +99,116 @@ $(document).ready(function(){
 /*	HOME PAGE SHOW // HIDE ALL OTHERS  */	
 	
 $(document).ready(function(){
-  $("#home-button-container").click(function(){
+  $("#home-button-container.1").click(function(){
   	$("#home-container").css("opacity", 0);
   	$('#home-container').css('display', 'flex');
   	$('#about-container').slideUp(1000);
-  	$("#community-container.ice-cream-social").slideUp(1000);
-    $("#community-container.bedspread-radio").slideUp(1000);
-    $("#community-container.softweb").slideUp(1000);
-    $("#artists-container.dame-nature").slideUp(1000);
-    $("#artists-container.huntingdog").slideUp(1000);
-    $("#artists-container.tati").slideUp(1000);
+  	// $("#community-container.ice-cream-social").slideUp(1000);
+   //  $("#community-container.bedspread-radio").slideUp(1000);
+   //  $("#community-container.softweb").slideUp(1000);
+   //  $("#artists-container.dame-nature").slideUp(1000);
+   //  $("#artists-container.huntingdog").slideUp(1000);
+   //  $("#artists-container.tati").slideUp(1000);
     $("#home-container").css("opacity", 1);
     $("#home-container").slideDown(1000);
   });
 }); 
+
+$(document).ready(function(){
+  $("#home-button-container.2").click(function(){
+  	$("#home-container").css("opacity", 0);
+  	$('#home-container').css('display', 'flex');
+  	// $('#about-container').slideUp(1000);
+  	$("#community-container.ice-cream-social").slideUp(1000);
+    // $("#community-container.bedspread-radio").slideUp(1000);
+    // $("#community-container.softweb").slideUp(1000);
+    // $("#artists-container.dame-nature").slideUp(1000);
+    // $("#artists-container.huntingdog").slideUp(1000);
+    // $("#artists-container.tati").slideUp(1000);
+    $("#home-container").css("opacity", 1);
+    $("#home-container").slideDown(1000);
+  });
+});
+
+$(document).ready(function(){
+  $("#home-button-container.3").click(function(){
+  	$("#home-container").css("opacity", 0);
+  	$('#home-container').css('display', 'flex');
+  	// $('#about-container').slideUp(1000);
+  	// $("#community-container.ice-cream-social").slideUp(1000);
+    $("#community-container.bedspread-radio").slideUp(1000);
+    // $("#community-container.softweb").slideUp(1000);
+    // $("#artists-container.dame-nature").slideUp(1000);
+    // $("#artists-container.huntingdog").slideUp(1000);
+    // $("#artists-container.tati").slideUp(1000);
+    $("#home-container").css("opacity", 1);
+    $("#home-container").slideDown(1000);
+  });
+});
+
+$(document).ready(function(){
+  $("#home-button-container.4").click(function(){
+  	$("#home-container").css("opacity", 0);
+  	$('#home-container').css('display', 'flex');
+  	// $('#about-container').slideUp(1000);
+  	// $("#community-container.ice-cream-social").slideUp(1000);
+   //  $("#community-container.bedspread-radio").slideUp(1000);
+    $("#community-container.softweb").slideUp(1000);
+    // $("#artists-container.dame-nature").slideUp(1000);
+    // $("#artists-container.huntingdog").slideUp(1000);
+    // $("#artists-container.tati").slideUp(1000);
+    $("#home-container").css("opacity", 1);
+    $("#home-container").slideDown(1000);
+  });
+});
+
+$(document).ready(function(){
+  $("#home-button-container.5").click(function(){
+  	$("#home-container").css("opacity", 0);
+  	$('#home-container').css('display', 'flex');
+  	// $('#about-container').slideUp(1000);
+  	// $("#community-container.ice-cream-social").slideUp(1000);
+   //  $("#community-container.bedspread-radio").slideUp(1000);
+   //  $("#community-container.softweb").slideUp(1000);
+    $("#artists-container.dame-nature").slideUp(1000);
+    // $("#artists-container.huntingdog").slideUp(1000);
+    // $("#artists-container.tati").slideUp(1000);
+    $("#home-container").css("opacity", 1);
+    $("#home-container").slideDown(1000);
+  });
+});
+
+$(document).ready(function(){
+  $("#home-button-container.6").click(function(){
+  	$("#home-container").css("opacity", 0);
+  	$('#home-container').css('display', 'flex');
+  	// $('#about-container').slideUp(1000);
+  	// $("#community-container.ice-cream-social").slideUp(1000);
+   //  $("#community-container.bedspread-radio").slideUp(1000);
+   //  $("#community-container.softweb").slideUp(1000);
+   //  $("#artists-container.dame-nature").slideUp(1000);
+    $("#artists-container.huntingdog").slideUp(1000);
+    // $("#artists-container.tati").slideUp(1000);
+    $("#home-container").css("opacity", 1);
+    $("#home-container").slideDown(1000);
+  });
+});
+
+$(document).ready(function(){
+  $("#home-button-container.7").click(function(){
+  	$("#home-container").css("opacity", 0);
+  	$('#home-container').css('display', 'flex');
+  	// $('#about-container').slideUp(1000);
+  	// $("#community-container.ice-cream-social").slideUp(1000);
+   //  $("#community-container.bedspread-radio").slideUp(1000);
+   //  $("#community-container.softweb").slideUp(1000);
+   //  $("#artists-container.dame-nature").slideUp(1000);
+   //  $("#artists-container.huntingdog").slideUp(1000);
+    $("#artists-container.tati").slideUp(1000);
+    $("#home-container").css("opacity", 1);
+    $("#home-container").slideDown(1000);
+  });
+});
 
 /*	ABOUT PAGE SHOW // HIDE ALL OTHERS  */	
 	
@@ -336,7 +440,7 @@ $(document).ready(function(){
 				</div>				
 			</div>	
 		</div>
-		<div id="home-button-container">
+		<div id="home-button-container" class="1">
 			<div id="home-button"></div>
 		</div>
 	</div>
@@ -385,12 +489,12 @@ $(document).ready(function(){
   });
 }); 
 
-$(document).ready(function(){
-  $("#small-logo-container.two").click(function(){
-  	$("#image-slider-container").slideToggle( "slow" );
-    $("#navigation-menu-container.two").slideToggle( "slow" );
-  });
-});
+// $(document).ready(function(){
+//   $("#small-logo-container.two").click(function(){
+//   	$("#image-slider-container").slideToggle( "slow" );
+//     $("#navigation-menu-container.two").slideToggle( "slow" );
+//   });
+// });
 
 </script>
 
@@ -399,9 +503,9 @@ $(document).ready(function(){
 		<div id="small-logo-container" class="two">
 			<a href="#home-container"> <div id="small-logo"></div> </a>
 		</div>
-		<div id="image-slider-container">
+<!-- 		<div id="image-slider-container">
 
-		</div>
+		</div> -->
 		<div id="navigation-menu-container" class="two">
 			<div id="navigation-menu-hr-container"> <hr id="navigation-menu-hr"> </div>
 			<div id="navigation-menu-list">
@@ -461,7 +565,7 @@ $(document).ready(function(){
 				</div>				
 			</div>	
 		</div>
-		<div id="home-button-container">
+		<div id="home-button-container" class="2">
 			<div id="home-button"></div>
 		</div>			
 	</div>
@@ -657,12 +761,12 @@ $(document).ready(function(){
   });
 }); 
 
-$(document).ready(function(){
-  $("#small-logo-container.three").click(function(){
-  	$("#image-slider-container.bedspread-radio").slideToggle( "slow" );
-    $("#navigation-menu-container.three").slideToggle( "slow" );
-  });
-});
+// $(document).ready(function(){
+//   $("#small-logo-container.three").click(function(){
+//   	$("#image-slider-container.bedspread-radio").slideToggle( "slow" );
+//     $("#navigation-menu-container.three").slideToggle( "slow" );
+//   });
+// });
 
 </script>
 
@@ -671,9 +775,9 @@ $(document).ready(function(){
 		<div id="small-logo-container" class="three">
 			<div id="small-logo"></div>
 		</div>
-		<div id="image-slider-container" class="bedspread-radio">
+<!-- 		<div id="image-slider-container" class="bedspread-radio">
 		</div>
-		<div id="navigation-menu-container" class="three">
+ -->		<div id="navigation-menu-container" class="three">
 			<div id="navigation-menu-hr-container"> <hr id="navigation-menu-hr"> </div>
 			<div id="navigation-menu-list">
 				<div id="navigation-section">
@@ -732,7 +836,7 @@ $(document).ready(function(){
 				</div>				
 			</div>	
 		</div>
-		<div id="home-button-container">
+		<div id="home-button-container" class="3">
 			<div id="home-button"></div>
 		</div>			
 	</div>
@@ -922,12 +1026,12 @@ $(document).ready(function(){
   });
 }); 
 
-$(document).ready(function(){
-  $("#small-logo-container.four").click(function(){
-  	$("#image-slider-container.softweb").slideToggle( "slow" );
-    $("#navigation-menu-container.four").slideToggle( "slow" );
-  });
-});	
+// $(document).ready(function(){
+//   $("#small-logo-container.four").click(function(){
+//   	$("#image-slider-container.softweb").slideToggle( "slow" );
+//     $("#navigation-menu-container.four").slideToggle( "slow" );
+//   });
+// });	
 	
 </script>
 
@@ -936,7 +1040,7 @@ $(document).ready(function(){
 		<div id="small-logo-container" class="four">
 			<div id="small-logo"></div>
 		</div>
-		<div id="image-slider-container" class="softweb"></div>
+<!-- 		<div id="image-slider-container" class="softweb"></div> -->
 		<div id="navigation-menu-container" class="four">
 			<div id="navigation-menu-hr-container"> <hr id="navigation-menu-hr"> </div>
 			<div id="navigation-menu-list">
@@ -996,7 +1100,7 @@ $(document).ready(function(){
 				</div>				
 			</div>	
 		</div>
-		<div id="home-button-container">
+		<div id="home-button-container" class="4">
 			<div id="home-button"></div>
 		</div>		
 	</div>
@@ -1344,7 +1448,7 @@ $(document).ready(function(){
 				</div>				
 			</div>	
 		</div>
-		<div id="home-button-container">
+		<div id="home-button-container" class="5">
 			<div id="home-button"></div>
 		</div>			
 	</div>
@@ -1472,7 +1576,7 @@ $(document).ready(function(){
 				</div>				
 			</div>	
 		</div>
-		<div id="home-button-container">
+		<div id="home-button-container" class="6">
 			<div id="home-button"></div>
 		</div>			
 	</div>
@@ -1586,7 +1690,7 @@ $(document).ready(function(){
 				</div>				
 			</div>	
 		</div>
-		<div id="home-button-container">
+		<div id="home-button-container" class="7">
 			<div id="home-button"></div>
 		</div>			
 	</div>
